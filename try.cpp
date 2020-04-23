@@ -10,15 +10,20 @@ int main()
 {
     int val = 0;
     int age;
-    string name;
-    cout <<"Enter your name : ";
-    getline(cin,name);
+    string fname;
+    string lname;
+
+    cout <<"Enter your Fisrt name : ";
+    getline(cin,fname);
+    cout << "Enter your last name : ";
+    getline(cin,lname);
     cout << "Enter your age : ";
     cin>> age;
+
+    cout << "Welcome! "<<fname<<" "<<lname<<"\n";
+    cout << "You are "<<age<<" years old.\n";
     cout <<"Enter the value of your choice in-between(0-100) :";
     cin >> val;
-    cout << name ;
-    cout <<("\n",age);
     if(val < grade_c)
     {
         cout << "\nFail : Grade C";
