@@ -14,14 +14,16 @@ void detail(){
     int age;
     cout << "Enter your Name :";
     getline (cin, name);
-    cout << "Enter your age";
+    cout << "Enter your age : ";
     cin >>age;
     cout<< "Hello "<<name<< " of age "<<age<<"\n";
 }
 int main()
 {
     
-    detail();
+detail();
+    int age;
+    cin >> age;    
     if (age<infant)
     {
         cout << "You belong to Infant group.\n";
