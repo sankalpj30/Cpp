@@ -1,4 +1,5 @@
 #include <iostream>
+#include <string>
 #define grade_a 75
 #define grade_b 50
 #define grade_c 25
@@ -12,14 +13,20 @@ int main()
     int age;
     string fname;
     string lname;
-
-    cout <<"Enter your Fisrt name : ";
+    string inp;
+    int number;
+    
+    cout <<"Enter your First name : ";
     getline(cin,fname);
     cout << "Enter your last name : ";
     getline(cin,lname);
-    cout << "Enter your age : ";
-    cin>> age;
-
+    cout<<"Enter the number of your choice : ";
+    getline(cin,inp);
+    number = stoi(inp);
+    cout << "The number you have entered is "<< number; 
+     cout << "Enter your age : ";
+     cin>> age;
+    
     cout << "Welcome! "<<fname<<" "<<lname<<"\n";
     cout << "You are "<<age<<" years old.\n";
     cout <<"Enter the value of your choice in-between(0-100) :";
